@@ -15,6 +15,10 @@ void setup() {
   pinMode(LED_GREEN,OUTPUT); 
   pinMode(LED_BLUE,OUTPUT); 
   pinMode(LED_YELLOW,OUTPUT);
+  pinMode(BUTTON_K1, INPUT_PULLUP);
+  pinMode(BUTTON_K2, INPUT_PULLUP);
+  Serial.begin(9600);
+  
 }
 
 void loop() {
