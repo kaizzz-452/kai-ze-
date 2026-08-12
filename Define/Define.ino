@@ -33,6 +33,22 @@ void setup() {
 
 }
 
+// Arrays
+const String reminderTitles[4] = {
+  "0001 = Check Healthy365 app",
+  "0002 = Check Singpass for any notifications",
+  "0003 = Check for any outgoing bills notifications from gov.sg",
+  "0004 = Check for whether you have taken your medicine"
+};
+
+
+const int displayCodes[4] = {1, 2, 3, 4};
+const int completionMelody[3] = {523, 659, 784};
+const int victoryMelody[5] = {523, 659, 784, 880, 1047};
+
+
+
+
 
 void loop() {
   
