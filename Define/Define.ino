@@ -81,8 +81,11 @@ void overduealert() //Function, Ji Wunn
 
     do  {
     tone(BUZZER_PIN, 800, 500); //Digital Buzzer
+    delay(500);
     tone(BUZZER_PIN, 600, 500);
+    delay(500);
     tone(BUZZER_PIN, 400, 500);
+    delay(500);
     } while (digitalRead(BUTTON_K1) == 1);
 
     digitalWrite(LED_RED, LOW);
