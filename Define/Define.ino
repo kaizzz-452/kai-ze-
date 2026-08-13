@@ -12,7 +12,7 @@
 #define DISPLAY_DIO 11
 
 
-//Functions
+//Function Prototypes
 int reminderfrequency(int knobValue); //Ji Wunn
 void overduealert(); //Ji Wunn
 
