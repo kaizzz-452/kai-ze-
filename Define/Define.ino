@@ -218,13 +218,15 @@ unsigned long reminderfrequency(int knobValue) {
 void overduealert() {
   digitalWrite(LED_RED, HIGH);
 
+  int frequencies[] = {800, 600, 400};
+  int durations[] = {500, 600, 700};
+  int numNotes = 3;
+
   do {
-    tone(BUZZER_PIN, 800, 500);
-    delay(500);
-    tone(BUZZER_PIN, 600, 500);
-    delay(500);
-    tone(BUZZER_PIN, 400, 500);
-    delay(500);
+    for (int i = 0; i < numNotes; i++) {
+    tone(BUZZER_PIN, frequencies[i], durations[i]);
+    delay(durations[i]);
+    }
   } while (digitalRead(BUTTON_K1) == HIGH);
 
   digitalWrite(LED_RED, LOW);
